@@ -1,2 +1,2 @@
-# find-your-zodiac
+# find your zodiac
 just for fun
