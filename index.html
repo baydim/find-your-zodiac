@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Zodiac</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
+</head>
+<body>
+    <section id="kezodiak" class="bawah">
+        <h2 class="platform">Ramalan berdasarkan Zodiak:</h2>
+        <div class="row fitur">
+            <form name="formzodiak">
+              
+                    <!-- input tanggal -->
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate" name="itanggalz" onClick=value="" >
+                    <label for="last_name">Tanggal</label>
+                </div>
+              
+                    <!-- input bulan -->
+                <div class="input-field col s6">
+                    <select name="ibulanz">  
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>  
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>  
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>  
+                        <option value="10">October</option>
+                        <option value="11">November</option>  
+                        <option value="12">December</option>
+                    </select>
+                </div>
+
+            </form>
+        </div> 
+</section>
+
+<!--   tombol cari -->
+<a id="" class="waves-effect waves-light btn modal-trigger" href="#modal1" onClick="zo()" value="Proses" >Cari</a>
+
+<!-- Modal Structure cari -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4></h4>
+    <p id="come">A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+
+<!-- js materialize -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+<!--   js operasi cari zodiac -->
+<script src="all.js"></script>
+  
+<!--   operasi widget materialize -->
+<script>
+    $(document).ready(function(){
+    $('.modal').modal();
+    $('select').formSelect();
+  });
+</script>
+
+</body>
+</html>
